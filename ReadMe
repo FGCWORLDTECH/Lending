@@ -1,1 +1,42 @@
 
+Scenario : Our security team is asking for help ensuring proper reviews are being done to code being added into our repositories. We have hundreds of repositories in our organization. What is the best way we can achieve at scale? 
+
+Analysis of customer  request : 
+Note : Security Team represent a Customer 
+
+Before starting any implementation/resolution I will be performing some analysis which are part of the SDLC methodologies to better assist the security team.
+
+A- Security team ( internal our organization)
+
+B- Ensuring proper reviews are being done to code added into repositories ( it means use any github tools or functionality to make sure we have Pull request that has been enforced) 
+
+C-  hundreds of repositories in our organization  ( enforcing code review on multiple repositories .
+
+D- We are new to some of the out-of-the-box settings and the GitHub API ( create a step by step resolution to support the customer)
+
+I will be created a step by step POC ( proof of concept) of the entire steps which will have a double effects :
+1- Resolve the customer issue
+2- Educate the Customer  which will immediately break any key cycle dependency. It will be good to setup code review , if it hasn’t been done on the repo.
+
+
+Solution/use case: 
+https://github.com/FGCWORLDTECH/Lending
+
+A- We will use Reviewable which is  a code review tool for GitHub pull requests. It is free for open source repositories but not for enterprise Github accounts.
+Go to : https://reviewable.io/
+
+
+B- Click on Repositories 
+At this step we will synchronize github with reviewable  and authorize reviewable to access github.
+
+
+
+Click on repositories and enable the connections 
+
+
+
+
+Finally, run a Pull request to test the tool.  If no existing commit ahead from the feature branch to perform, please check the PR creation section below (part 4) 
+
+
+Now the below steps are additional steps to be performed if the customer would like to setup code reviews 
